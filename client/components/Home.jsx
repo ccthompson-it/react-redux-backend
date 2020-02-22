@@ -11,9 +11,9 @@ class App extends Component {
 
   render() {
     return (
-      <div id='content'>
-        <h1>This is the Home Page!</h1>
-        <p>Hello World!</p>
+      <div>
+        <h1 className="title">This is the Home Page!</h1>
+        <p>I made myself a boilerplate because I was sick of not having one with everything on it.</p>
         <button onClick={this.handleButton}>About</button>
       </div>
     )

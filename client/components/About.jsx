@@ -11,8 +11,8 @@ class App extends Component {
 
   render() {
     return (
-      <div id='content'>
-        <h1>This App Contains:</h1>
+      <div>
+        <h1 className="title">This App Contains:</h1>
         <p>a single, simple API endpoint (`/api/v1/fruits`)</p>
         <p>a single React component (App)</p>
         <p>a fake database module (`db.js`)</p>
