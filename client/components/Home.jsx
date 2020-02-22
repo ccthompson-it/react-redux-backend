@@ -27,11 +27,12 @@ class Home extends Component {
     return (
       <div>
         <h1 className="title">This is the Home Page!</h1>
-        <p>I made myself a boilerplate because I was sick of not having one with everything on it.</p>
-        <p>Here are some movie quotes:</p>
+        <p>I made myself a boilerplate because I was sick of not having one with everything on it.</p> 
+        <br/>
+        <p className="bold">Here are some movie quotes:</p>
 
         {quotes && quotes.map((quote, i) => <p key={i}>{quote}</p>)}
-        
+
         <button onClick={this.handleButton}>About</button>
       </div>
     )
