@@ -14,7 +14,7 @@ class App extends Component {
       <div id='content'>
         <h1>This App Contains:</h1>
         <p>a single, simple API endpoint (`/api/v1/fruits`)</p>
-        <p>a single React component (`<App />`)</p>
+        <p>a single React component (App)</p>
         <p>a fake database module (`db.js`)</p>
         <p>an API client module (`apiClient.js`)</p>
         <p>configuration for Jest and Enzyme (including JSDOM)</p>
