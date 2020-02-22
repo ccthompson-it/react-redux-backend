@@ -1,5 +1,5 @@
 import React from 'react'
-import Enzyme, {shallow} from 'enzyme'
+import Enzyme, { shallow } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 
 import App from '../../../client/components/App'
@@ -15,13 +15,13 @@ jest.mock('react-redux', () => {
   }
 })
 
-Enzyme.configure({adapter: new Adapter()})
+Enzyme.configure({ adapter: new Adapter() })
 
 
 describe("<App /> component", () => {
   let dispatch, wrapper, instance
   beforeEach(() => {
-    dispatch=jest.fn()
+    dispatch = jest.fn()
     wrapper = shallow(<App dispatch={dispatch} />)
     instance = wrapper.instance()
   })
@@ -29,7 +29,7 @@ describe("<App /> component", () => {
   test('only the home comp displays when page is "home"', () => {
     expect.assertions(3)
     expect(wrapper.containsMatchingElement(<Home />)).toBe(false)
-    wrapper.setProps({page: 'home'})
+    wrapper.setProps({ page: 'home' })
     expect(wrapper.containsMatchingElement(<About />)).toBe(false)
     expect(wrapper.containsMatchingElement(<Home />)).toBe(true)
   })
@@ -37,7 +37,7 @@ describe("<App /> component", () => {
   test('only the about comp displays when page is "about"', () => {
     expect.assertions(3)
     expect(wrapper.containsMatchingElement(<About />)).toBe(false)
-    wrapper.setProps({page: 'about'})
+    wrapper.setProps({ page: 'about' })
     expect(wrapper.containsMatchingElement(<Home />)).toBe(false)
     expect(wrapper.containsMatchingElement(<About />)).toBe(true)
   })

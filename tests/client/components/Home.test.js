@@ -4,8 +4,6 @@ import Adapter from 'enzyme-adapter-react-16'
 
 import Home from '../../../client/components/Home'
 
-import { getQuotes } from '../../../client/apiClient'
-
 jest.mock('react-redux', () => {
   return {
     connect: () => {
