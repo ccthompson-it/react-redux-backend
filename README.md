@@ -15,7 +15,7 @@ You can find the server running on [http://localhost:3000](http://localhost:3000
 
 This repo includes:
 
-* a few React components, linked through a redux store (App, Home and About)
+* a few React components, linked through a redux store (`App, Home and About`)
 * a redux action and reducer
 * some basic styling
 * a single, simple API endpoint (`/api/v1/quotes`)
