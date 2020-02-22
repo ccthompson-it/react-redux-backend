@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import { changePage } from '../actions'
 
-class App extends Component {
+class About extends Component {
 
   handleButton = () => {
     let { dispatch } = this.props
@@ -27,4 +27,4 @@ class App extends Component {
 }
 
 
-export default connect()(App)
+export default connect()(About)
