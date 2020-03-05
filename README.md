@@ -8,6 +8,7 @@ cd [your-project-name]
 npm install (to install dependencies)
 npx knex migrate:latest (to create a db table)
 npx knex seed:run (to populate table)
+git remote set-url origin https://github.com/[YOUR USERNAME]/[YOUR REPO NAME]
 npm run dev (to start the dev server)
 ```
 
