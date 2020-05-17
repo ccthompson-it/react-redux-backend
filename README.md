@@ -3,7 +3,7 @@
 To get started:
 
 ```
-git clone https://github.com/ccthompson-it/fullstack-boilerplate.git [your-project-name]
+git clone https://github.com/ccthompson-it/react-redux-backend.git [your-project-name]
 cd [your-project-name]
 npm install (to install dependencies)
 npx knex migrate:latest (to create a db table)
